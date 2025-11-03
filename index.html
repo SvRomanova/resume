@@ -1,0 +1,281 @@
+<!doctype html>
+<html lang="uk">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Резюме - Тройно Світлана Вадимівна</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500&display=swap" rel="stylesheet" />
+  <style>
+    :root {
+      --accent: #dc2626;
+      --border: #e5e5e5;
+      --text: #000;
+      --bg: #fff;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: 'Inter', sans-serif;
+      background-color: var(--bg);
+      color: var(--text);
+      line-height: 1.6;
+    }
+
+    .container {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 50px 20px;
+    }
+
+    .header {
+      text-align: center;
+      margin-bottom: 50px;
+    }
+
+    .photo-placeholder {
+      width: 160px;
+      height: 160px;
+      border-radius: 50%;
+      background-image: url('MyPhoto.jpeg');
+      background-size: cover;
+      background-position: center;
+      margin: 0 auto 20px;
+      border: 3px solid var(--border);
+      transition: transform 0.3s ease, border-color 0.3s ease;
+    }
+
+    .photo-placeholder:hover {
+      border-color: var(--accent);
+      transform: scale(1.05);
+    }
+
+    .name {
+      font-size: 34px;
+      font-weight: 400;
+      margin: 10px 0 5px;
+    }
+
+    .position {
+      font-size: 18px;
+      color: var(--accent);
+      margin: 0;
+    }
+
+    .section {
+      margin-bottom: 50px;
+    }
+
+    .section-title {
+      font-size: 20px;
+      font-weight: 500;
+      border-bottom: 2px solid var(--border);
+      padding-bottom: 8px;
+      margin-bottom: 25px;
+    }
+
+    .about-text {
+      text-align: justify;
+    }
+
+    .skills-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+      gap: 15px;
+    }
+
+    .skill-item {
+      background: var(--bg);
+      border: 1px solid var(--border);
+      border-left: 4px solid var(--accent);
+      border-radius: 8px;
+      padding: 12px 16px;
+      transition: box-shadow 0.2s ease;
+    }
+
+    .skill-item:hover {
+      box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+    }
+
+    .contact-info {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 25px;
+    }
+
+    .contact-item {
+      font-size: 16px;
+    }
+
+    .contact-item a {
+      color: var(--accent);
+      text-decoration: none;
+    }
+
+    .contact-item a:hover {
+      text-decoration: underline;
+    }
+
+    /* --- Portfolio --- */
+    .portfolio-grid {
+      display: flex;
+      flex-direction: column; /* Один елемент у ряд */
+      gap: 40px;
+      width:100%;
+    }
+
+    .portfolio-item {
+      border: 1px solid var(--border);
+      border-radius: 12px;
+      padding: 25px;
+      background: var(--bg);
+      transition: all 0.3s ease;
+    }
+
+    .portfolio-item:hover {
+      transform: translateY(-6px);
+      box-shadow: 0 6px 14px rgba(0, 0, 0, 0.1);
+      border-color: var(--accent);
+    }
+
+    .portfolio-images {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 15px;
+      margin-bottom: 15px;
+    }
+
+    .portfolio-images img {
+      width: 100%;
+      border-radius: 10px;
+      border: 1px solid var(--border);
+      aspect-ratio: 4/3;
+      transition: transform 0.25s ease;
+    }
+
+    .portfolio-images img:hover {
+      transform: scale(1.07);
+      border-color: var(--accent);
+    }
+
+    .portfolio-title {
+      font-size: 18px;
+      font-weight: 500;
+      text-align: center;
+      color: var(--text);
+      margin-top: 10px;
+    }
+
+    @media (max-width: 600px) {
+      .portfolio-images {
+        grid-template-columns: 1fr;
+      }
+
+      .photo-placeholder {
+        width: 120px;
+        height: 120px;
+      }
+
+      .name {
+        font-size: 26px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header class="header">
+      <div class="photo-placeholder"></div>
+      <h1 class="name">Тройно Світлана Вадимівна</h1>
+      <p class="position">методист / оформлювач навчальних курсів (дистанційно)</p>
+    </header>
+
+    <section class="section">
+      <h2 class="section-title">Про мене</h2>
+      <p class="about-text">
+        Маю освіту магістра КДПУ за спеціальністю «Вчитель інформатики, математики, викладач фахової передвищої та вищої освіти». Понад 6 років працюю репетитором із математики та програмування 🧮💻. За цей час допомогла десяткам учнів не лише покращити оцінки, а й відчути впевненість у власних знаннях.
+
+Досвід роботи копірайтером, контент-менеджером та вчителем у математичному ліцеї дав мені можливість поєднати педагогічну майстерність із умінням створювати зрозумілі, структуровані й візуально привабливі навчальні матеріали 📘.
+
+Постійно вдосконалюю свої методики, використовую сучасні цифрові інструменти та інтерактивні підходи, щоб кожне заняття було ефективним, цікавим і мотивувало до подальшого розвитку 🌱.
+
+Для мене найважливіше — якість знань, щирий контакт з учнем і бажання бачити результат, який змінює ставлення до навчання 💡.
+      </p>
+    </section>
+
+  <section class="section">
+      <h2 class="section-title">Фото</h2>
+      <div class="portfolio-grid">
+        <div class="portfolio-item">
+          <div class="portfolio-images">
+            <img src="бакалавр.png" alt="Робота 1a" />
+            <img src="магістр.jpeg" alt="Робота 1b" />
+          </div>
+          <p class="portfolio-title">Освіта</p>
+        </div>
+
+      </div>
+    </section>
+
+    <section class="section">
+      <h2 class="section-title">Навички</h2>
+      <div class="skills-grid">
+        <div class="skill-item">створення навчальних презентацій у Canva та Google Slides</div>
+        <div class="skill-item">складання практичних завдань і тестів</div>
+        <div class="skill-item">оформлення робочих аркушів для уроків</div>
+        <div class="skill-item">адаптація матеріалів для різних вікових груп</div>
+        <div class="skill-item">використання Padlet, Quizizz, Mentimeter</div>
+        <div class="skill-item">контент-менеджмент і копірайтинг</div>
+      </div>
+    </section>
+
+    <section class="section">
+      <h2 class="section-title">Контакти</h2>
+      <div class="contact-info">
+        <div class="contact-item">✉️ <a href="mailto:svetlanaromanova734@gmail.com">svetlanaromanova734@gmail.com</a></div>
+        <div class="contact-item">💬 Telegram: <a href="https://t.me/TeachTroino" target="_blank">@TeachTroino</a></div>
+      </div>
+    </section>
+
+    <section class="section">
+      <h2 class="section-title">Приклади робіт</h2>
+      <div class="portfolio-grid">
+        <div class="portfolio-item">
+          <div class="portfolio-images">
+            <img src="1.png" alt="Робота 1a" />
+            <img src="2.png" alt="Робота 1b" />
+            <img src="3.png" alt="Робота 1c" />
+            <img src="8.png" alt="Робота 1d" />
+          </div>
+          <p class="portfolio-title">Приклад роботи №1</p>
+        </div>
+
+        <div class="portfolio-item">
+          <div class="portfolio-images">
+            <img src="5.png" alt="Робота 2a" />
+            <img src="6.png" alt="Робота 2b" />
+            <img src="4.png" alt="Робота 2c" />
+            <img src="7.png" alt="Робота 2d" />
+          </div>
+          <p class="portfolio-title">Приклад роботи №2</p>
+        </div>
+
+        <div class="portfolio-item">
+          <div class="portfolio-images">
+            <img src="11.png" alt="Робота 3a" />
+            <img src="22.png" alt="Робота 3b" />
+            <img src="33.png" alt="Робота 3c" />
+            <img src="44.png" alt="Робота 3d" />
+          </div>
+          <p class="portfolio-title">Приклад роботи №3</p>
+        </div>
+      </div>
+    </section>
+  </div>
+</body>
+</html>
